@@ -18,7 +18,51 @@
             src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
         </script>
         <script type="text/babel">
-        
+            function App(props) {
+                console.log(props)
+                return (
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
+                        <header>
+                            <h1>Sally Student</h1>
+                        </header>
+                        <section id="contact-info">
+                            <img src="#" alt="picture of Sally"/>
+                            <address>
+                                <a href="mailto:sallystudent123@aol.com?subject=I would like to schedule an interview">sallystudent123@aol.com</a>
+                                <a href="tel:+15554443333">(555)444-333</a>
+                            </address>
+                        </section>
+                        <section id="education">
+                            <h2>Education</h2>
+                            <p>Qwerty College</p>
+                        </section>
+                        <section id="workHist">
+                            <h3>Work History</h3>
+                            <h4>We're Your Type!</h4>
+                            <p>December 18, 2016 - June 28, 2018</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate volutpat imperdiet. Suspendisse a lectus vel urna accumsan lobortis ac in dolor. Suspendisse potenti. Donec posuere malesuada eros ac euismod. Phasellus sit amet enim sed tellus ultrices fermentum ut ut elit. Etiam ullamcorper dui ut lacus consequat, a malesuada ante cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat sem ac commodo lobortis. Donec faucibus, lacus ut varius convallis, turpis mi varius nunc, a condimentum ante est sed velit.</p>
+                            <h4>We Build, You Play</h4>
+                            <p>September 11, 2011 - June 6, 2015</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate volutpat imperdiet. Suspendisse a lectus vel urna accumsan lobortis ac in dolor. Suspendisse potenti. Donec posuere malesuada eros ac euismod. Phasellus sit amet enim sed tellus ultrices fermentum ut ut elit. Etiam ullamcorper dui ut lacus consequat, a malesuada ante cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat sem ac commodo lobortis. Donec faucibus, lacus ut varius convallis, turpis mi varius nunc, a condimentum ante est sed velit.</p>
+                        </section>
+                        <footer>
+                            2019 Sally J. Student 
+                        </footer>
+                    </div>
+                );
+            }
+
+            ReactDOM.render(
+                <App />,
+                document.querySelector('#application-root')
+            );
         </script>
     </body>
 </html>
